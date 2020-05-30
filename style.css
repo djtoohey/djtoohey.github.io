@@ -6,17 +6,29 @@ body{
 h1{
     color: white;
     margin: 0;
-    padding-bottom: 10px;
+    padding: 14px;
     text-align: center;
-    background-color: aqua;
+    background-color: darkcyan;
+    margin-left: 5%;
+    max-width: 350px;
+    
 }
+
+
 
 
 a{
     color: black;
     
 }
-
+#p-nav{
+    word-spacing: 25px;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 15px ;
+    /* padding-top: 15px; */
+    font-size: 20px;
+}
 hr{
     color: black; 
     background-color: black; 
@@ -27,7 +39,7 @@ hr{
     text-align: center;
     background-color: white;
     padding: 0;
-    padding-bottom: 10px;;
+    /* padding-bottom: 0;; */
     margin: 0;
 }
 
@@ -35,7 +47,7 @@ hr{
     background-color: white;
     border-color: black;
     border-width: 10px;
-    padding-bottom: 25px
+    margin-bottom: 25%;
 }
 
 /* form{
@@ -43,7 +55,7 @@ hr{
 } */
 
 footer{
-    background-color:aqua; 
+    background-color:darkcyan; 
     position: fixed; 
     left: 0; 
     bottom: 0; 
@@ -58,19 +70,131 @@ h2{
     margin: 0px;
     padding-top: 10px;
 }
-.portfolio-images {
-    position: relative;
-    display:inline-block;
-}
 
-h3 {
+
+/* h3 {
     background-color: #bebebe;
-    position: relative;
-    bottom: 75px;
+    position: absolute;
+    padding-right: 10vw;
+    
+    overflow: hidden;
+    font-size: 2vw;
+    width: 25vw;
     left: 0px;
-    right:0px;
-}
+    bottom: 2vw;
+} */
 
 .row-margin{
     margin: 25px;
 }
+
+.float-left-mod{
+    float: left;
+    margin-left: 2.5%;
+    width: 70%;
+}
+#index-img{
+    height: auto; 
+    width: 300px; 
+    margin-right: 10px; 
+    float: left;
+}
+
+.portfolio-images-div {
+    position: relative;
+    display:inline-block;
+    
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.portfolio-images{
+    height: auto; 
+    width: 250px; 
+}
+
+
+/* .portfolio-images-div {
+    position: relative;
+    display:block;
+    margin-bottom: 10vw;
+    text-align: center;
+    
+}  */
+
+/* .portfolio-images{
+    width: 65.5vw;
+} */
+
+
+/* XS */
+@media only screen and (max-width: 576px) {
+    h1{
+        text-align: center;
+        display: inline-block;
+    }
+    .col-xs-styling{
+        background-color: darkcyan;
+        
+    }
+    #p-nav{
+        text-align: center;
+        
+    }
+    .float-left-mod{
+        float: left;
+        width: 95%;
+        margin-bottom: 100px;
+        
+    }
+    #index-img{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        margin-bottom: 25px;
+    }
+
+
+    .portfolio-images-div {
+        position: relative;
+        display:block;
+        margin-bottom: 10vw;
+        text-align: center;
+        
+    } 
+
+    .portfolio-images{
+        width: 65.5vw;
+    }
+    
+}
+
+
+/* SM & MD */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    .float-left-mod{
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        min-width: 95vw;
+        width: 95%;
+    }
+
+    .portfolio-images{
+        width: 40vw;
+    }
+    
+    #p-nav{
+        margin: 20px 15px;
+    }
+    
+}
+
+/* xs
+@media(min-width:576px){}
+sm
+@media(min-width:768px){}
+md
+@media(min-width:992px){}
+lg
+@media(min-width:1200px){} */

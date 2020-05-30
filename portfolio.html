@@ -11,9 +11,44 @@
 </head>
 
 <body>
+    <script>
+        function getViewport() {
+            // https://stackoverflow.com/a/8876069
+            const width = Math.max(
+                document.documentElement.clientWidth,
+                window.innerWidth || 0
+            )
+            if (width <= 576) return console.log('xs')
+            if (width <= 768) return console.log('sm')
+            if (width <= 992) return console.log('md')
+            if (width <= 1200) return console.log('lg')
+            return console.log('xl')
+        }
+        getViewport();
+    </script>
+
+
     <!-- NAVBAR -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs col-xs-styling col-sm-4 navbar-styling">
+                <h1>Declan Toohey</h1>
+            </div>
+            <div class="col-xs  col-sm-8 navbar-styling">
+                <p id="p-nav">
+                    <a href="index.html" class="href">About</a>
+                    |
+                    <a href="portfolio.html" class="href">Portfolio</a>
+                    |
+                    <a href="contact.html" class="href">Contact</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
     <!-- NEED TO MAKE RESPONSIVE LAYOUT, CURRENTLY WORKS FOR DESKTOPISH -->
-    <div class="container container-aboutme border border-dark">
+    <div class="container container-aboutme border border-dark float-left-mod">
         <div class="row">
             <div class="col">
                 <h2>Portfolio</h2>
@@ -24,47 +59,55 @@
                 <hr>
             </div>
         </div>
-        <div class="row row-margin">
-            <div class="col-6">
-                <div class="portfolio-images">
-                    <img src="https://via.placeholder.com/250/0000FF/FFFFFF" />
-                    <h3>Word Guess</h3>
+        <div class="row ">
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+
+                    <img src="image1.png" class="portfolio-images" />
+
                 </div>
             </div>
-            <div class="col-6">
-                <div class="portfolio-images">
-                    <img src="https://via.placeholder.com/250/0000FF/FFFFFF" />
-                    <h3>RPG Game</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row row-margin">
-            <div class="col-6">
-                <div class="portfolio-images">
-                    <img src="https://via.placeholder.com/250/0000FF/FFFFFF" />
-                    <h3>Trivia Game</h3>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="portfolio-images">
-                    <img src="https://via.placeholder.com/250/0000FF/FFFFFF" />
-                    <h3>Info Widget</h3>
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+                    <img src="image2.png" class="portfolio-images" />
+
                 </div>
             </div>
         </div>
-        <div class="row row-margin">
-            <div class="col-6 ">
-                <div class="portfolio-images">
-                    <img src="https://via.placeholder.com/250/0000FF/FFFFFF" />
-                    <h3>Rock Paper Scissors</h3>
+        <div class="row ">
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+                    <img src="image3.png" class="portfolio-images" />
+
+                </div>
+            </div>
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+                    <img src="image4.png" class="portfolio-images" />
+
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs col-sm ">
+                <div class="portfolio-images-div">
+                    <img src="image5.png" class="portfolio-images" />
+
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+
 
 
     <!-- FOOTER -->
+    <footer class=" page-footer font-small blue">
+        <p></p>
+        <div class="footer-copyright text-center py-3">
+            Copyright&copy
+        </div>
+    </footer>
 </body>
 
 </html>

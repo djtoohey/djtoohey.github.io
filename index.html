@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Declan Toohey | About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -11,32 +12,36 @@
 </head>
 
 <body>
-    <!-- currently works like it should on mobile, but not on pc, need to look into responsive layout -->
+    <script>
+        function getViewport() {
+            // https://stackoverflow.com/a/8876069
+            const width = Math.max(
+                document.documentElement.clientWidth,
+                window.innerWidth || 0
+            )
+            if (width <= 576) return console.log('xs')
+            if (width <= 768) return console.log('sm')
+            if (width <= 992) return console.log('md')
+            if (width <= 1200) return console.log('lg')
+            return console.log('xl')
+        }
+        getViewport();
+    </script>
+    <!-- NAVBAR -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm navbar-styling">
+            <div class="col-xs col-xs-styling col-sm-4 navbar-styling">
                 <h1>Declan Toohey</h1>
             </div>
-        </div>
-        <!-- Hyperlinking? might need to change -->
-        <div class="row">
-            <div class="col-2 navbar-styling"></div>
-            <div class="col-2 navbar-styling">
-                <a href="index.html">Home</a>
+            <div class="col-xs  col-sm-8 navbar-styling">
+                <p id="p-nav">
+                    <a href="index.html" class="href">About</a>
+                    |
+                    <a href="portfolio.html" class="href">Portfolio</a>
+                    |
+                    <a href="contact.html" class="href">Contact</a>
+                </p>
             </div>
-            <div class="col-1 navbar-styling">
-                |
-            </div>
-            <div class="col-2 navbar-styling">
-                <a href="portfolio.html">Portfolio</a>
-            </div>
-            <div class="col-1 navbar-styling">
-                |
-            </div>
-            <div class="col-2 navbar-styling">
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="col-2 navbar-styling"></div>
         </div>
     </div>
 
@@ -45,22 +50,22 @@
     <!-- everything the same on all three pages ^^^ -->
 
     <!-- actual content of the page, need to refract code,  -->
-    <div class="container container-aboutme border border-dark">
+    <div class="container-fluid container-aboutme border border-dark float-left-mod">
         <div class="row">
-            <div class="col">
+            <div class="col-xs col-sm">
                 <h2>About Me</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-xs col-sm">
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <!-- ^^ Essentially the same just change h2 to correct name for each page ^^-->
-                <!-- Is the heading of the page -->
-                <img src="man.jpg" style="height: 250px; width: 300px; margin-right: 10px; float: left;">
+            <div class="col-xs col-sm">
+                <!-- ^^ Essentially the same just change h2 to correct name for each page ^^
+                Is the heading of the page -->
+                <img src="man.jpg" id="index-img">
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis esse fugiat enim cum blanditiis
                     quod autem quae perferendis earum odio, eveniet natus ullam eos expedita, dolorem repudiandae
                     doloribus consequuntur magnam rem tempore maiores. Ex officia qui temporibus perspiciatis odit nihil
@@ -87,14 +92,11 @@
     </div>
 
     <!-- foot is okay, probs need to refract a bit, then add to all other pages! -->
-    <footer class="page-footer font-small blue">
+    <footer class=" page-footer font-small blue">
         <p></p>
-
         <div class="footer-copyright text-center py-3">
-            Copyrightmf
+            Copyright&copy
         </div>
-        <!-- Copyright -->
-
     </footer>
 </body>
 
