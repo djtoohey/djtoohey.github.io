@@ -7,35 +7,23 @@
     <title>Declan Toohey | Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-navbar.css">
+    <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
 <body>
-    <script>
-        function getViewport() {
-            // https://stackoverflow.com/a/8876069
-            const width = Math.max(
-                document.documentElement.clientWidth,
-                window.innerWidth || 0
-            )
-            if (width <= 576) return console.log('xs')
-            if (width <= 768) return console.log('sm')
-            if (width <= 992) return console.log('md')
-            if (width <= 1200) return console.log('lg')
-            return console.log('xl')
-        }
-        getViewport();
-    </script>
-
-
     <!-- NAVBAR -->
-    <div class="container-fluid">
+    <nav class="container-fluid">
         <div class="row">
-            <div class="col-xs col-xs-styling col-sm-4 navbar-styling">
+            <!-- setting xs and sm+ columns, styling for both instances -->
+            <div class="col-xs col-sm-4 navbar-styling col-xs-styling">
                 <h1>Declan Toohey</h1>
             </div>
-            <div class="col-xs  col-sm-8 navbar-styling">
-                <p id="p-nav">
+
+            <div class="col-xs col-sm-8 navbar-styling">
+                <!-- setting id to style navbar links-->
+                <p class="nav-links">
                     <a href="index.html" class="href">About</a>
                     |
                     <a href="portfolio.html" class="href">Portfolio</a>
@@ -44,46 +32,56 @@
                 </p>
             </div>
         </div>
-    </div>
+    </nav>
 
+    <!-- a break between the navbar container and the main content container -->
     <br>
-    <!-- NEED TO MAKE RESPONSIVE LAYOUT, CURRENTLY WORKS FOR DESKTOPISH -->
-    <div class="container container-aboutme border border-dark float-left-mod">
+
+    <!-- PORTFOLIO -->
+    <!-- setting up container for content, with a dark border 
+        and additional styling with content-styling  -->
+    <section class="container border border-dark content-styling">
         <div class="row">
             <div class="col">
+                <!-- Heading -->
                 <h2>Portfolio</h2>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <hr>
+                <!-- line between heading and content -->
+            </div>
+        </div>
+        <!-- 3 rows, max 2 cols -->
+        <div class="row ">
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+                    <!-- image with styling to allow for mobile responsiveness -->
+                    <img src="images/image1.png" class="portfolio-images" />
+
+                </div>
+            </div>
+            <div class="col-xs col-sm">
+                <div class="portfolio-images-div">
+                    <!-- image with styling to allow for mobile responsiveness -->
+                    <img src="images/image2.png" class="portfolio-images" />
+
+                </div>
             </div>
         </div>
         <div class="row ">
             <div class="col-xs col-sm">
                 <div class="portfolio-images-div">
-
-                    <img src="image1.png" class="portfolio-images" />
-
-                </div>
-            </div>
-            <div class="col-xs col-sm">
-                <div class="portfolio-images-div">
-                    <img src="image2.png" class="portfolio-images" />
-
-                </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-xs col-sm">
-                <div class="portfolio-images-div">
-                    <img src="image3.png" class="portfolio-images" />
+                    <!-- image with styling to allow for mobile responsiveness -->
+                    <img src="images/image3.png" class="portfolio-images" />
 
                 </div>
             </div>
             <div class="col-xs col-sm">
                 <div class="portfolio-images-div">
-                    <img src="image4.png" class="portfolio-images" />
+                    <!-- image with styling to allow for mobile responsiveness -->
+                    <img src="images/image4.png" class="portfolio-images" />
 
                 </div>
             </div>
@@ -91,20 +89,24 @@
         <div class="row ">
             <div class="col-xs col-sm ">
                 <div class="portfolio-images-div">
-                    <img src="image5.png" class="portfolio-images" />
+                    <!-- image with styling to allow for mobile responsiveness -->
+                    <img src="images/image5.png" class="portfolio-images" />
 
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
 
     <!-- FOOTER -->
-    <footer class=" page-footer font-small blue">
+    <footer class="page-footer font-small blue">
+        <!-- empty p tag to allow for small blue line at the top of the footer -->
         <p></p>
-        <div class="footer-copyright text-center py-3">
+
+        <!-- puts in a scalable padding using bootstrap -->
+        <div class="py-3 footer-bg">
             Copyright&copy
         </div>
     </footer>

@@ -8,33 +8,23 @@
     <title>Declan Toohey | About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-navbar.css">
+    <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
 <body>
-    <script>
-        function getViewport() {
-            // https://stackoverflow.com/a/8876069
-            const width = Math.max(
-                document.documentElement.clientWidth,
-                window.innerWidth || 0
-            )
-            if (width <= 576) return console.log('xs')
-            if (width <= 768) return console.log('sm')
-            if (width <= 992) return console.log('md')
-            if (width <= 1200) return console.log('lg')
-            return console.log('xl')
-        }
-        getViewport();
-    </script>
     <!-- NAVBAR -->
-    <div class="container-fluid">
+    <nav class="container-fluid">
         <div class="row">
-            <div class="col-xs col-xs-styling col-sm-4 navbar-styling">
+            <!-- setting xs and sm+ columns, styling for both instances -->
+            <div class="col-xs col-sm-4 navbar-styling col-xs-styling">
                 <h1>Declan Toohey</h1>
             </div>
-            <div class="col-xs  col-sm-8 navbar-styling">
-                <p id="p-nav">
+
+            <div class="col-xs col-sm-8 navbar-styling">
+                <!-- setting id to style navbar links-->
+                <p class="nav-links">
                     <a href="index.html" class="href">About</a>
                     |
                     <a href="portfolio.html" class="href">Portfolio</a>
@@ -43,58 +33,69 @@
                 </p>
             </div>
         </div>
-    </div>
+    </nav>
 
+    <!-- a break between the navbar container and the main content container -->
     <br>
 
-    <!-- everything the same on all three pages ^^^ -->
-
-    <!-- actual content of the page, need to refract code,  -->
-    <div class="container-fluid container-aboutme border border-dark float-left-mod">
+    <!-- ABOUTME -->
+    <!-- setting up container for content, with a dark border 
+        and additional styling with content-styling  -->
+    <section class="container border border-dark content-styling">
         <div class="row">
             <div class="col-xs col-sm">
+                <!-- Heading -->
                 <h2>About Me</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-xs col-sm">
+                <!-- line between heading and content -->
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-xs col-sm">
-                <!-- ^^ Essentially the same just change h2 to correct name for each page ^^
-                Is the heading of the page -->
-                <img src="man.jpg" id="index-img">
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis esse fugiat enim cum blanditiis
-                    quod autem quae perferendis earum odio, eveniet natus ullam eos expedita, dolorem repudiandae
-                    doloribus consequuntur magnam rem tempore maiores. Ex officia qui temporibus perspiciatis odit nihil
-                    debitis velit minus, nisi harum maxime commodi atque molestiae illo?
-                    <br>
-                    <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, suscipit consequuntur. Earum
-                    ratione magnam officia unde similique voluptates repellat ut excepturi, aut, assumenda a ex nam at
-                    quos quidem tenetur? Facilis pariatur ipsam veritatis error sunt, nemo commodi quibusdam repudiandae
-                    quaerat architecto, at, esse velit alias quam nisi dolores reiciendis. ipsum, dolor sit amet
-                    consectetur adipisicing elit. Molestias eveniet ad perferendis minima at
-                    voluptatem voluptas dolorum consectetur qui ipsum. Perspiciatis nisi in fuga earum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tempore ex quibusdam, optio porro ad
-                    dignissimos exercitationem tenetur magni voluptatem quod eius in, quaerat soluta nulla. Veniam
-                    maiores nulla expedita explicabo, suscipit, pariatur rem totam dolorem velit maxime ab asperiores
-                    eius quae nesciunt optio doloremque, consequuntur possimus excepturi itaque nihil beatae saepe illum
-                    fugit sunt! Debitis ipsum perferendis libero, aperiam officiis magni est, deleniti nobis eius
-                    laborum corrupti itaque molestiae quis aliquam qui praesentium commodi rerum consequuntur
-                    repudiandae dolores earum provident maxime et! Placeat eum, totam iure nisi quas, qui vero est optio
-                    illum nobis ut obcaecati, aliquam ipsam magni?
+                <!-- setting image to a photo of me and styling to allow the text to wrap around the text but then also 
+                    move accordingly when in mobile view -->
+                <img src="images/declan.jpg" id="index-img">
+                <p> Born in Hobart Tasmania, Australia, raised in South East Asia, two years in Brunei and eight in
+                    Singapore,
+                    moved to Adelaide in 2015. Declan has had an interest in Computer Science/Information Technology
+                    since Year 1. This developed through playing games such as Minecraft, Team Fortress 2, Terraria,
+                    Counter-Strike: Global Offensive, Defence of the Ancients 2 (DOTA2) and many others.
+                    <br><br>
+                    This lead to doing some sort of IT throughout schooling, although was a complusary subject from
+                    Years 1 to 5, yet decided to stick with it as he found it enjoyable and interesting. After moving
+                    to Adelaide, he focused more on his IT, taking full elective subjects for computer sciene right
+                    through highschool. Also taking a course outside of regular school hours to obtain a Certificate III
+                    in Information, Digital Media and Technology. This all paid off as in 2018, in his final year of
+                    schooling, was able to aquire a merit A+ for IT, only one of two for the cohort.
+                    <br><br>
+                    After completing highschool, he went straight into University study. However, 1 semester into the
+                    course he found it to be bland and rehashing everything that was taught in highschool and what he
+                    thought should have been assumed knowledge. In so, just as he turned 19 he decided that University
+                    was not the right path for him, well for the moment. He focused on working at KFC and a few other
+                    organisations for financial gain and experience in other fields besides IT.
+                    <br><br>
+                    Nine months later, while scrolling through the internet, Declan came across an advertisement for a
+                    University of Adelaide course offering a 24 week intensive course on Fullstack Development. He is
+                    currently attending these courses at night and on weekends while still being able to work during
+                    weekdays.
+
+
+
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- foot is okay, probs need to refract a bit, then add to all other pages! -->
-    <footer class=" page-footer font-small blue">
+    <!-- FOOTER -->
+    <footer class="page-footer font-small blue">
+        <!-- empty p tag to allow for small blue line at the top of the footer -->
         <p></p>
-        <div class="footer-copyright text-center py-3">
+        <!-- puts in a scalable padding using bootstrap -->
+        <div class="py-3 footer-bg">
             Copyright&copy
         </div>
     </footer>

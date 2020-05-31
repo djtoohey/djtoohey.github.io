@@ -1,0 +1,74 @@
+/* NAVBAR STYLING */
+
+/* Name styling */
+h1{
+    color: #ffffff;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+    background-color: #008b8b;
+    margin-left: 5%;
+    max-width: 350px;
+    
+}
+
+/* Making links black */
+a{
+    color: #000000;
+}
+
+/* positioning the links */
+.nav-links{
+    word-spacing: 25px;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 15px ;   
+    font-size: 20px;
+}
+
+/* styling links and surrounding area*/
+.navbar-styling{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+/* XS SCREENS*/
+@media only screen and (max-width: 576px) {
+    /* moving text to the top middle of the screen stretched on mobile */
+    h1{
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* filling the background of the h1 tag to stretch the color across the screen on mobile */
+    .col-xs-styling{
+        background-color: #008b8b;
+    }
+
+    /* reposition links from the right of h1 to below on mobile */
+    .nav-links{
+        text-align: center;
+        
+    }
+}
+
+
+/* SM & MD SCREENS*/
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    /* making it more fluid the transition between screens - mostly works */
+    .nav-links{
+        margin: 20px 15px;
+    }
+    
+}
+
+/* xs
+@media(min-width:576px){}
+sm
+@media(min-width:768px){}
+md
+@media(min-width:992px){}
+lg
+@media(min-width:1200px){} */

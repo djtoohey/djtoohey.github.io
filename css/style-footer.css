@@ -1,0 +1,18 @@
+/* FOOTER STYLING */
+
+/* styling colors and positioning of footer */
+footer{
+    background-color:#008b8b; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    text-align: center; 
+    width: 100%;
+    color: #ffffff
+}
+
+/* making footer have two different colors */
+.footer-bg{
+    background-color: #a9a9a9;
+}
+
