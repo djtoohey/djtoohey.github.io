@@ -17,3 +17,6 @@ In completing this homework task, I broke the work down into the following:
 ```
 
 GitHub Pages: https://djtoohey.github.io/homework-wk2/index.html
+
+
+HTML validation - validator.w3.org
