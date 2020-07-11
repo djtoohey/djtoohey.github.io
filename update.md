@@ -51,19 +51,6 @@ the default bootstrap theme or an unstyled HTML site.
 * Make sure the font size is large enough to read, and that the colors don't cause eye strain.
 
 
-### Updated GitHub Profile 
-
-* If you haven't yet, now is the time to update the following in your GitHub profile: 
-
-    * Profile picture
-
-
-* Employers (and potential collaborators) _will_ look at your GitHub profile, so put your best face forward. 
-
-
-* Follow your classmates. They are the beginning of your professional network and being a developer is as much about being a part of the community as it is writing code. 
-
-
 ### Updated Resume 
 
 Submit a clear, concise and compelling resume, tailored to the type of job you’re looking for.
