@@ -1,7 +1,7 @@
-# homework-wk2
-Submission for the Homework for Week 2 (Responsive Portfolio)  
+# Portfolio
+Responsive Portfolio  
 
-In completing this homework task, I broke the work down into the following:
+## Update History
 ```
 1. content of each page
 2. making the content mobile responsive:
@@ -19,4 +19,4 @@ In completing this homework task, I broke the work down into the following:
 GitHub Pages: https://djtoohey.github.io/
 
 
-HTML validation - validator.w3.org
+<!-- HTML validation - validator.w3.org -->
