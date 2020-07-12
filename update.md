@@ -50,16 +50,5 @@ the default bootstrap theme or an unstyled HTML site.
 
 * Make sure the font size is large enough to read, and that the colors don't cause eye strain.
 
-
-### Updated Resume 
-
-Submit a clear, concise and compelling resume, tailored to the type of job you’re looking for.
-
-
-### Updated LinkedIn Profile 
-
-Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
-
-
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

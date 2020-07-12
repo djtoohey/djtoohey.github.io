@@ -2,7 +2,7 @@
 
 /* styling colors and positioning of footer */
 footer{
-    background-color:#008b8b; 
+    background-color:#B1A296; 
     position: fixed; 
     left: 0; 
     bottom: 0; 
@@ -13,6 +13,6 @@ footer{
 
 /* making footer have two different colors */
 .footer-bg{
-    background-color: #a9a9a9;
+    background-color: #557A95;
 }
 

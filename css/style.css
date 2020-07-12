@@ -1,16 +1,22 @@
 /* MAIN STYLING */
 
+/* #5d5c61 - dark gray
+#379683 - light gray
+#7395AE - light blue
+#557A95 - dark blue
+#B1A296 - beige */
+
 /* USED ON ALL PAGES */
 /* setting background color and padding to allow for copyright bar to not overlap with content */
 body{
-    background-color: #d3d3d3;
+    background-color: #5d5c61;
     padding-bottom: 120px;
 }
 
 /* line between heading and content on all pages*/
 hr{
-    color: #000000; 
-    background-color: #000000; 
+    /* color: #7395AE;  */
+    background-color: white; 
     height: 2px;
 }
 
@@ -25,10 +31,18 @@ h2{
     float: left;
     margin-left: 2.5%;
     width: 70%;
-    background-color: #ffffff;
-    border-color: #000000;
-    border-width: 10px;
+    background-color: #557A95;
+    /* border-color: red; */
+    border-width: 15px;
     margin-bottom: 25%;
+    color: white;
+}
+
+a{
+    color: hotpink;
+}
+a:hover{
+    color: purple;
 }
 
 

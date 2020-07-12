@@ -6,16 +6,21 @@ h1{
     margin: 0;
     padding: 14px;
     text-align: center;
-    background-color: #008b8b;
+    background-color: #7395AE;
     margin-left: 5%;
     max-width: 350px;
     
 }
 
-/* Making links black */
+/* Making links white */
 nav a{
-    color: #000000;
+    color:white;
 }
+nav a:hover{
+    color: #5d5c61;
+    text-decoration: none;
+}
+
 
 /* positioning the links */
 .nav-links{
@@ -29,7 +34,7 @@ nav a{
 /* styling links and surrounding area*/
 .navbar-styling{
     text-align: center;
-    background-color: #ffffff;
+    background-color: #557A95;
     padding: 0;
     margin: 0;
 }
@@ -44,7 +49,7 @@ nav a{
 
     /* filling the background of the h1 tag to stretch the color across the screen on mobile */
     .col-xs-styling{
-        background-color: #008b8b;
+        background-color: #557A95;
     }
 
     /* reposition links from the right of h1 to below on mobile */
