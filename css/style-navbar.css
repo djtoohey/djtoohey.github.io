@@ -2,11 +2,11 @@
 
 /* Name styling */
 h1{
-    color: #ffffff;
+    color: #f7fff7;
     margin: 0;
     padding: 14px;
     text-align: center;
-    background-color: #7395AE;
+    background-color: #ff6b6b;
     margin-left: 5%;
     max-width: 350px;
     
@@ -14,7 +14,7 @@ h1{
 
 /* Making links white */
 nav a{
-    color:white;
+    color:#f7fff7;
 }
 nav a:hover{
     color: #5d5c61;
@@ -34,7 +34,7 @@ nav a:hover{
 /* styling links and surrounding area*/
 .navbar-styling{
     text-align: center;
-    background-color: #557A95;
+    background-color: #ffe66d;
     padding: 0;
     margin: 0;
 }
@@ -49,7 +49,7 @@ nav a:hover{
 
     /* filling the background of the h1 tag to stretch the color across the screen on mobile */
     .col-xs-styling{
-        background-color: #557A95;
+        background-color: #ffe66d;
     }
 
     /* reposition links from the right of h1 to below on mobile */

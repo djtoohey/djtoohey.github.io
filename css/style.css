@@ -9,14 +9,14 @@
 /* USED ON ALL PAGES */
 /* setting background color and padding to allow for copyright bar to not overlap with content */
 body{
-    background-color: #5d5c61;
+    background-color: #4ecdc4;
     padding-bottom: 120px;
 }
 
 /* line between heading and content on all pages*/
 hr{
     /* color: #7395AE;  */
-    background-color: white; 
+    background-color: #f7fff7; 
     height: 2px;
 }
 
@@ -31,18 +31,18 @@ h2{
     float: left;
     margin-left: 2.5%;
     width: 70%;
-    background-color: #557A95;
+    background-color: #1a535c;
     /* border-color: red; */
     border-width: 15px;
     margin-bottom: 15%;
-    color: white;
+    color: #f7fff7;
 }
 
 a{
-    color: hotpink;
+    color: #ff6b6b;
 }
 a:hover{
-    color: purple;
+    color: #ffe66d;
 }
 
 
