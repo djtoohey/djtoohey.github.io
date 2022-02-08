@@ -2,17 +2,17 @@
 
 /* styling colors and positioning of footer */
 footer{
-    background-color:#ffe66d; 
+    background-color:#3034BA; 
     position: fixed; 
     left: 0; 
     bottom: 0; 
     text-align: center; 
     width: 100%;
-    color: #f7fff7;
+    color: #ffffff;
 }
 
 /* making footer have two different colors */
 .footer-bg{
-    background-color: #ff6b6b;
+    background-color: #BA110B;
 }
 
