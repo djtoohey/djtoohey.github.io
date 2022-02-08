@@ -6,10 +6,12 @@
 #557A95 - dark blue
 #B1A296 - beige */
 
+/* 3034BA 1DB954 */
+
 /* USED ON ALL PAGES */
 /* setting background color and padding to allow for copyright bar to not overlap with content */
 body{
-    background-color: #191414; 3034BA 1DB954
+    background-color: #191414; 
     padding-bottom: 120px;
 }
 
