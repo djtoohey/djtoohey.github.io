@@ -1,0 +1,152 @@
+/* MAIN STYLING */
+
+/* #5d5c61 - dark gray
+#379683 - light gray
+#7395AE - light blue
+#557A95 - dark blue
+#B1A296 - beige */
+
+/* 3034BA 1DB954 */
+
+/* USED ON ALL PAGES */
+/* setting background color and padding to allow for copyright bar to not overlap with content */
+body{
+    background-color: #191414; 
+    padding-bottom: 120px;
+}
+
+/* line between heading and content on all pages*/
+hr{
+    /* color: #7395AE;  */
+    background-color: #ffffff; 
+    height: 2px;
+}
+
+/* Heading to page*/
+h2{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+/* styling for the container */
+.content-styling{
+    float: left;
+    margin-left: 2.5%;
+    width: 70%;
+    background-color: #BA110B;
+    /* border-color: red; */
+    border-width: 15px;
+    margin-bottom: 15%;
+    color: #ffffff;
+}
+
+a{
+    color: #3034BA;
+}
+a:hover{
+    color: #ffffff;
+}
+
+
+/* ABOUT ME PAGE */
+/* styling for image, to keep consistent and to allow for text to wrap */
+#index-img{
+    height: auto; 
+    width: 300px; 
+    margin-right: 10px; 
+    float: left;
+}
+
+/* PORTFOLIO PAGE */
+/* allow for images to move responsively */
+.portfolio-images-div {
+    position: relative;
+    display:inline-block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* setting width and height for images responsively */
+.portfolio-images{
+    height: auto; 
+    width: 250px; 
+}
+
+.portfolio-img{
+    width: 90%;
+    height: auto;
+    margin: 10px;
+}
+
+.h3-portfolio{
+    margin-left: 10px;
+}
+.p-portfolio{
+    margin-left: 10px;
+}
+
+
+/* XS SCREENS*/
+@media only screen and (max-width: 576px) {
+    /* ALL PAGES */
+    /* gives small borders around content when on mobile */
+    .content-styling{
+        float: left;
+        width: 95%;
+        margin-bottom: 100px;
+        
+    }
+
+    /* ABOUT ME PAGE */
+    /* resizes image and allows for text to be brought to below the image */
+    #index-img{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        margin-bottom: 25px;
+    }
+
+
+    /* PORTFOLIO PAGE*/
+    /* brings all images into the one line */
+    .portfolio-images-div {
+        position: relative;
+        display:block;
+        margin-bottom: 10vw;
+        text-align: center;
+        
+    } 
+    /* adjusts images to the size of pages */
+    .portfolio-images{
+        width: 65.5vw;
+    }
+    
+}
+
+
+/* SM & MD SCREENS*/
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    /* ALL PAGES */
+    .content-styling{
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        min-width: 95vw;
+        width: 95%;
+    }
+
+    /* PORTFOLIO PAGE*/
+    /* adjusts images to the size of pages */
+    .portfolio-images{
+        width: 40vw;
+    }
+}
+
+/* xs
+@media(min-width:576px){}
+sm
+@media(min-width:768px){}
+md
+@media(min-width:992px){}
+lg
+@media(min-width:1200px){} */
